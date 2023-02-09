@@ -27,10 +27,11 @@ fun ProductList(
             .addFadingEdge(
                 listState = state,
                 colorStops = arrayOf(
-                    0.0f to Color.Black,
+                    0.0f to Color.Transparent,
                     0.5f to Color.Black,
                     1.0f to Color.Transparent
-                )
+                ),
+                position = FadingEdgePosition.END
             ),
         contentPadding = PaddingValues(16.dp),
         horizontalArrangement = Arrangement.SpaceBetween,
